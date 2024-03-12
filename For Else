@@ -1,0 +1,8 @@
+numbers=[7,32,8,9]
+for i in numbers:
+
+    if i%5==0:
+        break
+    else:
+        print("there is no number divisible by 5")
+print(i)
