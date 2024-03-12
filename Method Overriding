@@ -1,0 +1,12 @@
+class Animal:
+    name=""
+    def eat(self):
+        print("i can eat")
+class Dog(Animal):
+    def eat(self):
+        super().eat()
+        print("My name is")
+labrador=Dog()
+#labrador.name="rohu"
+labrador.eat()
+#labrador.display('hello')
