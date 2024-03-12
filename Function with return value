@@ -1,0 +1,9 @@
+def add(a,b):
+    if a==0 and b==0:
+        return "you have entered 0 for both variables"
+    else:
+        return a+b
+
+var1= int(input("enter first number:\n"))
+var2= int(input("enter second number:\n"))
+print(add(var1,var2))
