@@ -1,0 +1,39 @@
+class human:
+    def __init__(self,heart):
+        print("calling init from human")
+        self.eyes=2
+        self.nose=1
+        self.heart=heart
+    def eat(self):
+        print("i can eat")
+    def work(self):
+        print("i can code")
+class male(human):
+    def __init__(self):
+        print("calling init from male")
+        self.name="name"
+    def flirt(self):
+        print("i can dance")
+    def work(self):
+        print("i can run")
+class boy(male):
+     def __init__(self,heart,language):
+        human.__init__(self,heart)
+        male.__init__(self)
+        self.language=language
+    def sleep(self):
+        print("i can sleep")
+    def work(self):
+        print("i can test")
+    #def display(self):
+       # print(f"hi i am {self.heart} and i will teach {self.language} ")
+boy_1=boy("heart")
+# boy_1.eat()
+# boy_1.flirt()
+#boy_1.work()
+#male.work(boy_1)
+print(boy.mro())
+#print(boy_1.hand)
+#print(boy_1.heart)
+#print(boy_1.language)
+#boy_1.display()
