@@ -1,0 +1,9 @@
+a=8
+def display():
+
+    global a
+    a=30
+    print(f"1 is {a}")
+print(f"2 is {a}")
+display()
+print(a)
