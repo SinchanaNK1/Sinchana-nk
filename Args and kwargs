@@ -1,0 +1,17 @@
+def add(*numbers,name):
+    c=0
+    print(numbers)
+    print(name)
+    for i in numbers:
+        c+=i
+    print(f"sum is {c}")
+
+add (2,5,name="hh")
+add(6,8,9,name="ff")
+
+def info_person(*args, **kwargs):
+    for key, value in kwargs.items():
+        print(key, value)
+        print(args)
+info_person(1,2,name="Ram",age=30,dept="CSE")
+info_person(1,2,3,name="Shyam",dept="cse")
