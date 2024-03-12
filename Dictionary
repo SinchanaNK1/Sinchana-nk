@@ -1,0 +1,5 @@
+phone_no={'ram':1234,'shyam':3456,'mohan':5678}
+print(phone_no)
+phone_no2=phone_no.copy ()
+print(phone_no2)
+print(len(phone_no))
